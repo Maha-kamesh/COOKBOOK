@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe | NutriFit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/996eae5dc1.js" crossorigin="anonymous"></script>
+</head>
+<body data-page="dish">
+    <header class="main-header">
+        <a class="brand-logo" href="index.html">
+            <i class="fa-solid fa-bowl-food"></i>
+            <span>Nutri<span class="logo-bold">Fit</span></span>
+        </a>
+        <nav class="navigation-menu">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="index.html#cuisine" class="nav-item active">Cuisines</a>
+            <a href="index.html#Dietplans" class="nav-item">Diet Plans</a>
+        </nav>
+        <a class="action-btn-login" href="index.html#loginbtn">Log in</a>
+    </header>
+
+    <main class="page-layout">
+        <a href="cuisine.html" class="action-back-link" id="back-to-cuisine">
+            <i class="fa-solid fa-arrow-left"></i>
+            Back to dishes
+        </a>
+
+        <section class="recipe-hero">
+            <div class="recipe-copy">
+                <span class="recipe-kicker" id="dish-cuisine">Cuisine</span>
+                <h1 class="heading-main" id="dish-title">Recipe Name</h1>
+                <div class="recipe-stats" aria-label="Recipe nutrition">
+                    <span><i class="fa-solid fa-dumbbell"></i> <b id="dish-protein">Protein</b></span>
+                    <span><i class="fa-solid fa-fire"></i> <b id="dish-calories">Calories</b></span>
+                    <span><i class="fa-solid fa-clock"></i> <b id="dish-time">Time</b></span>
+                    <span><i class="fa-solid fa-bowl-rice"></i> <b id="dish-amount">Amount</b></span>
+                </div>
+            </div>
+            <figure class="recipe-image-frame">
+                <img id="dish-image" src="intalian.jpg" alt="Recipe image">
+            </figure>
+        </section>
+
+        <section class="recipe-bars" aria-label="Recipe details">
+            <aside class="recipe-panel ingredients-panel">
+                <h2>Ingredients</h2>
+                <div class="ingredients-list" id="ingredients-list"></div>
+            </aside>
+
+            <section class="recipe-panel instructions-panel">
+                <div class="instruction-head">
+                    <h2>Instructions</h2>
+                    <div class="instruction-meta">
+                        <span><i class="fa-solid fa-clock"></i> <b id="dish-time-copy">Follow steps below</b></span>
+                    </div>
+                </div>
+                <ol class="instruction-list" id="instruction-list"></ol>
+            </section>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
